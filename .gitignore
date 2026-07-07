@@ -22,6 +22,7 @@ node_modules/
 .DS_Store
 *.pem
 /list/
+Demo视频.mp4
 
 # debug
 npm-debug.log*
