@@ -68,6 +68,7 @@ Next.js 15 · React 19 · Tailwind CSS 4 · 火山方舟豆包多模态 API · h
 ## 快速启动
 
 ```bash
+cd 小微AI
 npm install
 npm run dev
 ```

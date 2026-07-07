@@ -23,6 +23,7 @@
 ## 快速开始
 
 ```bash
+cd 小微AI
 npm install
 npm run dev
 ```
@@ -32,38 +33,40 @@ npm run dev
 ## 项目结构
 
 ```
-src/
-├── app/
-│   ├── page.tsx              # 首页：机构信息 + 上传入口
-│   ├── monitor/page.tsx      # 无感监控播报（MVP：上传截帧模拟）
-│   ├── preview/page.tsx      # 预览与文案生成
-│   ├── share/page.tsx        # 卡片生成与分享
-│   └── api/analyze/route.ts  # 豆包 API 代理
-├── components/
-│   ├── home/                 # 机构设置、餐次选择、图片选择
-│   ├── preview/              # 预览、布局模式选择
-│   ├── share/                # 分享卡片、主题选择
-│   ├── layout/               # 布局组件
-│   └── ui/                   # 基础 UI 组件
-├── context/
-│   └── app-context.tsx       # 跨页面状态管理
-├── lib/
-│   ├── doubao-server.ts      # 豆包服务端调用
-│   ├── monitor-prompt.ts     # 监控专用 Prompt（质检+文案）
-│   ├── monitor-config.ts     # 作息定时与监控时段配置
-│   ├── card-themes.ts        # 卡片主题配置
-│   └── institution-storage.ts # 机构信息本地持久化
-├── utils/
-│   └── api.ts                # 客户端 API 封装
-└── types/
-    └── index.ts              # 类型定义
+小微AI/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx              # 首页：机构信息 + 上传入口
+│   │   ├── monitor/page.tsx      # 无感监控播报（MVP：上传截帧模拟）
+│   │   ├── preview/page.tsx      # 预览与文案生成
+│   │   ├── share/page.tsx        # 卡片生成与分享
+│   │   └── api/analyze/route.ts  # 豆包 API 代理
+│   ├── components/
+│   │   ├── home/                 # 机构设置、餐次选择、图片选择
+│   │   ├── preview/              # 预览、布局模式选择
+│   │   ├── share/                # 分享卡片、主题选择
+│   │   ├── layout/               # 布局组件
+│   │   └── ui/                   # 基础 UI 组件
+│   ├── context/
+│   │   └── app-context.tsx       # 跨页面状态管理
+│   ├── lib/
+│   │   ├── doubao-server.ts      # 豆包服务端调用
+│   │   ├── monitor-prompt.ts     # 监控专用 Prompt（质检+文案）
+│   │   ├── monitor-config.ts     # 作息定时与监控时段配置
+│   │   ├── card-themes.ts        # 卡片主题配置
+│   │   └── institution-storage.ts # 机构信息本地持久化
+│   ├── utils/
+│   │   └── api.ts                # 客户端 API 封装
+│   └── types/
+│       └── index.ts              # 类型定义
 ```
 
 ## 环境变量配置
 
-1. 复制示例文件：
+1. 进入项目目录并复制示例文件：
 
 ```bash
+cd 小微AI
 cp .env.example .env.local
 ```
 
